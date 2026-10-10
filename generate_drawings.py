@@ -113,7 +113,7 @@ def pdf(path,key,m):
   w,d=part['size']; px,py,pz=part['pos']; a=math.radians(part['rotation'][0]); hh,dd=(18,d) if part['plane']=='horizontal' else (d,18)
   pts=[]
   for z,y in [(-dd/2,-hh/2),(dd/2,-hh/2),(dd/2,hh/2),(-dd/2,hh/2)]: pts.append([pz+z*math.cos(a)+y*math.sin(a),py+y*math.cos(a)-z*math.sin(a)])
-  poly(c,pts,sx,oy,s,COL[part['code']]); text(c,sx+300,oy+py*s,part['id'],10,True)
+  poly(c,pts,sx,oy,s,COL[part['code']]); text(c,sx+300,oy+py*s+(16 if part['id']=='U' else 0),part['id'],10,True)
  ep=[[ez+zz*math.cos(ea)+yy*math.sin(ea),ey+yy*math.cos(ea)-zz*math.sin(ea)] for zz,yy in [(-ed/2,-eh/2),(ed/2,-eh/2),(ed/2,eh/2),(-ed/2,eh/2)]]
  poly(c,ep,sx,oy,s,'#6c7275')
  text(c,sx,115,'Глубины: A 420 → K 360 → T 330',12,True)
