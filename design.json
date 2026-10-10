@@ -1,0 +1,39 @@
+{
+  "revision":"R5",
+  "units":"mm",
+  "envelope":[590,800,420],
+  "thickness":18,
+  "sideHeight":782,
+  "dadoDepth":6,
+  "defaultProfile":"flow",
+  "profiles":{
+    "flow":{"name":"01 · Плавная дуга","formula":"smooth","description":"Один спокойный переход, без повторных волн. Основной вариант."},
+    "lean":{"name":"02 · Прямая с мягкими концами","formula":"lean","description":"Почти прямая линия в середине и короткие плавные переходы у пола и столешницы."},
+    "arc":{"name":"03 · Скульптурная дуга","formula":"arc","description":"Более вертикальное основание; изгиб усиливается к столешнице."}
+  },
+  "parts":[
+    {"id":"B1","code":"B","name":"Левая боковина","plane":"side","pos":[572,0,0],"rotation":[0,0,0]},
+    {"id":"B2","code":"B","name":"Правая боковина","plane":"side","pos":[0,0,0],"rotation":[0,0,0]},
+    {"id":"T","code":"T","name":"Столешница","plane":"horizontal","size":[590,330],"pos":[295,791,255],"rotation":[0,0,0],"cornerRadius":24},
+    {"id":"K","code":"K","name":"Полка Katana · к себе 8°","plane":"horizontal","size":[566,360],"pos":[295,251,230],"rotation":[-8,0,0]},
+    {"id":"A","code":"A","name":"Нижнее основание AIRSTEP","plane":"horizontal","size":[566,420],"pos":[295,90,210],"rotation":[-10,0,0]},
+    {"id":"N","code":"N","name":"Задняя силовая перемычка","plane":"vertical","size":[566,90],"pos":[295,60,409],"rotation":[0,0,0]},
+    {"id":"U","code":"U","name":"Передний упор Katana · крепёж уточнить","plane":"vertical","size":[566,25],"pos":[295,248.49,57.67],"rotation":[-8,0,0]}
+  ],
+  "equipment":{
+    "amp":{"name":"Boss Katana-50 MkII (проверить модель)","dims":[470,398,238],"pos":[295,451.41,161.44],"rotation":[-8,0,0]},
+    "pedal":{"name":"AIRSTEP Kat Edition","dims":[300,45,70],"pos":[295,92.86,45],"rotation":[-10,0,0]}
+  },
+  "cableProposals":[
+    {"id":"C1","part":"T","center":[520,285],"diameter":40,"label":"Проход ноутбука Ø40; центр от левого переднего угла T: 520 / 285"},
+    {"id":"C2","part":"K","center":[505,315],"diameter":40,"label":"Проход сигнала Ø40; центр от левого переднего угла K: 505 / 315"},
+    {"id":"C3","part":"A","center":[495,365],"diameter":40,"label":"Проход запаса кабеля Ø40; центр от левого переднего угла A: 495 / 365"}
+  ],
+  "sheet":{"width":2440,"height":1220,"margin":6,"gap":6},
+  "sources":{
+    "boss":"https://static.roland.com/assets/media/pdf/KTN-Mk2_eng02_W.pdf",
+    "airstep":"https://xsonicaudio.com/pages/airstepkatedition",
+    "airstepManual":"https://cdn.rockboard.de/nos/Artikell_PDF/Manual_PDF/X_Sonic/EN/XSO_AIRSTEP_AIRSTEP_LITE_Manual_EN.pdf"
+  },
+  "releaseNote":"Размерный проект для согласования. Разъёмы схематичны: типы проверены, координаты не обмерены. Пазы и кабельные отверстия — отдельные операции, не готовая управляющая программа ЧПУ. Зазоры вокруг Katana меньше указанных в руководстве BOSS."
+}

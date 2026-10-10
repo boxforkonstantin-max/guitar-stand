@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Гитарная стойка — 3D-конструктор</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://unpkg.com/three@0.170.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.170.0/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Стойка 590 × 420 × 800</h1>
+      <p>Параметрическая сборка · единицы сцены: мм</p>
+    </div>
+    <div class="status" id="status"><span></span> R5 / примерка с преподавателем</div>
+  </header>
+
+  <main class="workspace">
+    <aside class="panel parts-panel" aria-label="Детали">
+      <div class="panel-heading">
+        <h2>Детали</h2>
+        <button class="text-button" id="showAll">Показать все</button>
+      </div>
+      <div id="partsList" class="parts-list"></div>
+      <div class="legend">
+        <span><i class="swatch plywood"></i> фанера 18 мм</span>
+        <span><i class="swatch equipment"></i> оборудование</span>
+      </div>
+      <section><h2>Обзор сборки</h2><button id="hideSelected">Скрыть выбранную деталь</button><p class="hint">Уберите боковину, чтобы рассмотреть кабели. «Показать все» возвращает детали.</p></section>
+      <section><h2>Раскрой / 2 изделия</h2><img id="layoutImage" alt="Раскладка деталей выбранного профиля на листе 2440 на 1220 мм" style="width:100%;background:white"><p class="hint">6 мм между габаритами. Нажмите «Лист SVG» для полного масштаба.</p></section>
+    </aside>
+
+    <section class="stage" aria-label="Интерактивная трехмерная модель">
+      <div class="toolbar" role="toolbar" aria-label="Инструменты модели">
+        <button id="moveMode" class="tool active" aria-pressed="true" title="Перемещение (W)">Двигать</button>
+        <button id="rotateMode" class="tool" aria-pressed="false" title="Вращение (E)">Крутить</button>
+        <button id="assemblySelect" class="tool" title="Выбрать всю сборку">Всё изделие</button>
+        <span class="divider"></span>
+        <button id="frontView" class="tool">Спереди</button>
+        <button id="sideView" class="tool">Сбоку</button>
+        <button id="rearView" class="tool">Сзади</button>
+        <button id="isoView" class="tool">3D</button>
+        <button id="fitView" class="tool">В кадр</button>
+      </div>
+      <div id="canvasHost"></div>
+      <div class="scale-chip">Сетка 100 мм · привязка <strong id="snapReadout">5 мм</strong></div>
+      <div class="help">ЛКМ — выбрать · тянуть манипулятор — двигать/крутить · фон — вращать камеру · колесо — масштаб</div>
+    </section>
+
+    <aside class="panel inspector" aria-label="Параметры и проверка">
+      <section>
+        <h2>Сборка</h2>
+        <label for="profileChoice">Передняя кромка боковин</label>
+        <select id="profileChoice" style="width:100%;padding:10px;margin:8px 0 12px;background:#243139;color:white">
+          <option value="flow">01 · Плавная дуга</option>
+          <option value="lean">02 · Прямая с мягкими концами</option>
+          <option value="arc">03 · Скульптурная дуга</option>
+        </select>
+        <p class="hint" id="profileNote"></p>
+        <div class="warning"><strong>Проверка эргономики:</strong> Katana наклонена к себе на 8°: перед полки ниже, зад выше. Спереди упор 25 мм. AIRSTEP сдвинут к передней кромке, но до продолжения низа K над кнопками всего около 96 мм — ниша тесная, удобство ноги НЕ подтверждено. Над верхним габаритом усилителя около 117 мм. Крепёж упора, устойчивость и доступ к ручкам требуют проверки.</div>
+        <p class="hint">Глубина снизу вверх: 420 → 360 → 330 мм. Широкая часть боковин внизу, узкая вверху. Кривая спереди, прямая кромка сзади.</p>
+        <label class="range-label" for="explode">Взрыв-схема <output id="explodeValue">0%</output></label>
+        <input id="explode" type="range" min="0" max="100" value="0">
+        <div class="button-row">
+          <button id="resetAssembly" class="primary">Вернуть в сборку</button>
+          <button id="toggleEquipment">Оборудование</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Выбрано</h2>
+        <p class="selected-name" id="selectedName">B1 · левая боковина</p>
+        <div class="coords" aria-label="Координаты выбранной детали">
+          <label>X <input id="posX" type="number" step="1"></label>
+          <label>Y <input id="posY" type="number" step="1"></label>
+          <label>Z <input id="posZ" type="number" step="1"></label>
+        </div>
+        <p class="hint">Координаты центра/базы детали в миллиметрах. Изменения применяются сразу.</p>
+        <div class="coords" aria-label="Углы поворота в градусах"><label>RX° <input id="rotX" type="number" step="1"></label><label>RY° <input id="rotY" type="number" step="1"></label><label>RZ° <input id="rotZ" type="number" step="1"></label></div>
+        <p class="hint">Свободное перемещение — примерка. Файлы описывают исходную сборку, не произвольные положения деталей.</p>
+      </section>
+
+      <section>
+        <h2>Задняя панель / кабели</h2>
+        <div class="button-row"><button id="toggleCables">Маршрут USB</button><button id="toggleHoles">Проходы Ø40</button></div>
+        <div class="button-row"><button id="ampSelect">Выбрать Katana</button><button id="pedalSelect">Выбрать AIRSTEP</button></div>
+        <p id="portInfo" class="hint">Вид «Сзади»: нажмите на цветной разъём. Положение разъёмов схематично, не обмер корпуса.</p>
+        <p class="hint">Kat Edition → USB Katana. USB усилителя занят педалью: одновременное прямое подключение ноутбука не показано.</p>
+        <p class="hint">Клипсы предлагаются внутри боковины у задней кромки; запас кабеля — на липучке под полкой K. Не перекрывать вентиляцию.</p>
+        <p class="hint">Маршрут и проходы относятся к исходной сборке. После перемещения верните детали в сборку перед оценкой кабелей.</p>
+      </section>
+
+      <section>
+        <h2>Контроль оборудования</h2>
+        <div class="equipment-grid">
+          <div><strong>Katana-50 MkII</strong><span>470 × 238 × 398 мм</span></div>
+          <div><strong>AIRSTEP Kat Edition</strong><span>300 × 70 × 45 мм</span></div>
+          <div><strong>Свободно по ширине</strong><span>42 мм с каждой стороны</span></div>
+          <div><strong>Наклон Katana</strong><span>8° к себе · примерка</span></div>
+        </div>
+        <div class="warning"><strong>Вентиляция не согласована.</strong> BOSS указывает: сверху 300 мм, по бокам 200 мм, сзади 150 мм. Здесь сверху около 117, по бокам 42 мм. Геометрическая посадка не означает допустимость эксплуатации. Пазы в 3D пока не вычтены. Корпуса заданы в масштабе, ручки и разъёмы условные.</div>
+      </section>
+
+      <section>
+        <h2>Файлы</h2>
+        <div class="downloads" id="downloads"></div>
+        <p class="hint">R5 · выбранный профиль · одна геометрия для 3D и чертежей. Кабельные отверстия — предложения, в CUT не включены. Плашка AUX/USB/наушники 3,5 мм отложена.</p>
+      </section>
+    </aside>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

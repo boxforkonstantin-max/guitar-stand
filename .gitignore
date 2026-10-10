@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env*
+output/*.png
+ENGINEERING_NOTES.md
+pack_search.py
+app/profiles.json

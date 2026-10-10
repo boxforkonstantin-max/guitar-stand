@@ -1,0 +1,29 @@
+{
+  "flow": {
+    "layoutStatus": "PASS",
+    "partsCount": 14,
+    "minimumBoundingBoxGapMM": 6.0,
+    "marginMM": 6,
+    "utilizationPercent": 86.49,
+    "manufacturingRelease": false,
+    "geometrySHA256": "8803caa690bb10cce3be69f95523784df2ca8ffa2e7e4fce14d9b3c604b3ba15"
+  },
+  "lean": {
+    "layoutStatus": "PASS",
+    "partsCount": 14,
+    "minimumBoundingBoxGapMM": 6.0,
+    "marginMM": 6,
+    "utilizationPercent": 86.49,
+    "manufacturingRelease": false,
+    "geometrySHA256": "d54ce19d653fb928270d849d5afc99899fb1c92a1b1a37a11d396b5ebac31a4d"
+  },
+  "arc": {
+    "layoutStatus": "PASS",
+    "partsCount": 14,
+    "minimumBoundingBoxGapMM": 6.0,
+    "marginMM": 6,
+    "utilizationPercent": 88.06,
+    "manufacturingRelease": false,
+    "geometrySHA256": "cb408917e6e1dda203736e480825209b5be7a5d3a44f466c912a38bfeffd16d0"
+  }
+}
