@@ -12,7 +12,7 @@ OUT=ROOT/'output'; OUT.mkdir(exist_ok=True)
 D=json.loads((ROOT/'design.json').read_text())
 # Assembly placement is derived from support planes, not eyeballed offsets.
 k=next(p for p in D['parts'] if p['id']=='K'); ang=math.radians(k['rotation'][0]); co,si=math.cos(ang),math.sin(ang)
-D['equipment']['amp']['pos']=[295,251+208*co+40*si,230+208*si-40*co]
+D['equipment']['amp']['pos']=[295,251+208*co+4*si,230+208*si-4*co]
 u=next(p for p in D['parts'] if p['id']=='U');u['pos']=[295,251+21.5*co+171*si,230+21.5*si-171*co]
 D['equipment']['pedal']['pos']=[295,90+(45-210)*math.tan(math.radians(10))+31.5/math.cos(math.radians(10)),45]
 W,H=D['sheet']['width'],D['sheet']['height']
@@ -67,11 +67,11 @@ def poly(c,p,x,y,s,color='#d4b78e'):
  q.close(); c.setFillColor(color); c.setStrokeColorRGB(.2,.25,.27); c.setLineWidth(.5); c.drawPath(q,stroke=1,fill=1)
 def header(c,title,sub,n):
  text(c,35,PH-38,title,20,True); text(c,35,PH-58,sub,10)
- text(c,35,20,f'R5 • Примерка наклона и эргономики, не выпуск в производство • мм • лист {n}',8)
+ text(c,35,20,f'R6 • Горизонтальная полка Katana, не выпуск в производство • мм • лист {n}',8)
 def dim(c,x,y,w,h):
  text(c,x,y-16,str(w),9); text(c,x+w*.55+10,y+h*.28,str(h),9)
 def pdf(path,key,m):
- c=canvas.Canvas(str(path),pagesize=(PW,PH)); c.setTitle('Гитарная стойка R5 / '+key)
+ c=canvas.Canvas(str(path),pagesize=(PW,PH)); c.setTitle('Гитарная стойка R6 / '+key)
  header(c,'Раскрой двух стоек / '+D['profiles'][key]['name'],'Лист 2440 × 1220 × 18. Отступ 6; зазор между габаритами ≥6. Без зеркалирования.',1)
  s=.455; x=35; y=150
  poly(c,rect(W,H),x,y,s,'#ffffff')
@@ -117,7 +117,7 @@ def pdf(path,key,m):
  ep=[[ez+zz*math.cos(ea)+yy*math.sin(ea),ey+yy*math.cos(ea)-zz*math.sin(ea)] for zz,yy in [(-ed/2,-eh/2),(ed/2,-eh/2),(ed/2,eh/2),(-ed/2,eh/2)]]
  poly(c,ep,sx,oy,s,'#6c7275')
  text(c,sx,115,'Глубины: A 420 → K 360 → T 330',12,True)
- text(c,40,75,'T верх 800; K центр Y251, наклон к себе 8° (перед ниже); A центр Y90, наклон 10°; упор U 25 мм.',10)
+ text(c,40,75,'T верх 800; K горизонтальная, верх Y260; A центр Y90, наклон 10°; упор U 25 мм.',10)
  text(c,40,53,'Оси сборки: X ширина, Y высота, Z от передней кромки к задней. Координаты центров - в model.json.',10)
  c.showPage()
  header(c,'Кабели и ограничения проекта','Отверстия ниже - предложения, не обязательная обработка. Точные модели оборудования нужно подтвердить.',4)
@@ -132,9 +132,9 @@ def pdf(path,key,m):
   'Katana-50 MkII: AC IN, USB-B, AUX IN, FOOT CONTROL/EXP, PHONES/REC OUT, POWER AMP IN.',
   'AIRSTEP Kat Edition: USB-C → USB-B Katana. Разъёмы схематичны, координаты не обмерены.',
   'ВАЖНО: руководство BOSS требует 200 мм по бокам, 300 мм сверху, 150 мм сзади, 50 мм спереди.',
-  'R5: по бокам 42 мм; над верхним габаритом Katana около 117 мм. Доступ к ручкам требует примерки.',
+  'R6: по бокам 42 мм; над верхним габаритом Katana 124 мм. Доступ к ручкам требует примерки.',
   'Эти зазоры меньше инструкции. Нельзя считать проект согласованным для эксплуатации усилителя.',
-  'AIRSTEP сдвинут вперёд: до продолжения низа K около 96 мм. Ниша тесная, удобство ноги НЕ подтверждено.'
+  'AIRSTEP сдвинут вперёд: до продолжения низа K около 123 мм. Удобство ноги требует примерки.'
  ]
  for j,line in enumerate(notes): text(c,40,345-j*27,line,10,j in [5,7])
  text(c,40,75,'Источник: BOSS KATANA MkII Owner’s Manual, разделы размещения и задней панели.',9)

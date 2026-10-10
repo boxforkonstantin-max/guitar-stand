@@ -1,5 +1,5 @@
 {
-  "revision":"R5",
+  "revision":"R6",
   "units":"mm",
   "envelope":[590,800,420],
   "thickness":18,
@@ -15,13 +15,13 @@
     {"id":"B1","code":"B","name":"Левая боковина","plane":"side","pos":[572,0,0],"rotation":[0,0,0]},
     {"id":"B2","code":"B","name":"Правая боковина","plane":"side","pos":[0,0,0],"rotation":[0,0,0]},
     {"id":"T","code":"T","name":"Столешница","plane":"horizontal","size":[590,330],"pos":[295,791,255],"rotation":[0,0,0],"cornerRadius":24},
-    {"id":"K","code":"K","name":"Полка Katana · к себе 8°","plane":"horizontal","size":[566,360],"pos":[295,251,230],"rotation":[-8,0,0]},
+    {"id":"K","code":"K","name":"Полка Katana · горизонтальная","plane":"horizontal","size":[566,360],"pos":[295,251,230],"rotation":[0,0,0]},
     {"id":"A","code":"A","name":"Нижнее основание AIRSTEP","plane":"horizontal","size":[566,420],"pos":[295,90,210],"rotation":[-10,0,0]},
     {"id":"N","code":"N","name":"Задняя силовая перемычка","plane":"vertical","size":[566,90],"pos":[295,60,409],"rotation":[0,0,0]},
-    {"id":"U","code":"U","name":"Передний упор Katana · крепёж уточнить","plane":"vertical","size":[566,25],"pos":[295,248.49,57.67],"rotation":[-8,0,0]}
+    {"id":"U","code":"U","name":"Передний упор Katana · крепёж уточнить","plane":"vertical","size":[566,25],"pos":[295,272.5,59],"rotation":[0,0,0]}
   ],
   "equipment":{
-    "amp":{"name":"Boss Katana-50 MkII (проверить модель)","dims":[470,398,238],"pos":[295,451.41,161.44],"rotation":[-8,0,0]},
+    "amp":{"name":"Boss Katana-50 MkII (проверить модель)","dims":[470,398,238],"pos":[295,459,226],"rotation":[0,0,0]},
     "pedal":{"name":"AIRSTEP Kat Edition","dims":[300,45,70],"pos":[295,92.86,45],"rotation":[-10,0,0]}
   },
   "cableProposals":[
