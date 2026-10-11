@@ -1,0 +1,13 @@
+D1 / 2026-10-11
+Separate LDSP prototype; original R6 files unchanged.
+Carcass 654 x 360 x 800 mm, 16 mm LDSP; horizontal amplifier shelf.
+Removable floor-supported pedal cassette, no purchased slides/hinges.
+12 parts, 36 paired joints, 84 drilling operations, 30 confirmats.
+build.py is the source for model.json, PDF, DXF, OpenSCAD and hardware list.
+Checked entry faces, hole bounds/depth, paired drilling axes and quantities.
+Rendered and visually reviewed all 17 PDF pages.
+Interactive viewer: centre-pivot part transforms, exploded view, cassette removal.
+NOT RELEASED FOR MANUFACTURE: guitar support incomplete (adapter only),
+ventilation deferred, stability/load not tested, some hardware only search links.
+No claim of exact On-Stage factory reproduction or verified lowest price.
+Public target: existing GitHub Pages /ldsp-onstage/; old /app/ preserved.

@@ -1,0 +1,20 @@
+{
+  "revision": "D1",
+  "parts": 12,
+  "joints": 36,
+  "confirmats": 30,
+  "holes": 84,
+  "checks": [
+    "local hole bounds and depth PASS",
+    "joint mating axis alignment PASS",
+    "confirmat quantity PASS"
+  ],
+  "release": "NOT_FOR_MANUFACTURE",
+  "pending": [
+    "ventilation",
+    "load/stability test",
+    "guitar support fit",
+    "selected feet screw lengths",
+    "procurement availability"
+  ]
+}
