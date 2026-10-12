@@ -1,0 +1,16 @@
+{
+  "wood_intersections": "PASS",
+  "bore_intersections": "PASS",
+  "export_dimensions": "PASS",
+  "drawer_travel_0_to_300": "PASS",
+  "fastener_quantities": "PASS",
+  "beam_criteria": "PASS",
+  "R6_unchanged": "PASS",
+  "not_verified": [
+    "actual rail pattern revision",
+    "anchor load capacity and substrate",
+    "joint withdrawal physical capacity",
+    "thermal operation",
+    "actual guitar fit"
+  ]
+}

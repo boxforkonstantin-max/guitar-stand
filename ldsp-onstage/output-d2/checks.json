@@ -1,0 +1,18 @@
+{
+  "revision": "D2",
+  "parts": 30,
+  "joints": 80,
+  "holes": 178,
+  "paired_axes": "PASS",
+  "bounds": "PASS",
+  "duplicate_holes": "PASS",
+  "nesting": "PASS",
+  "release": "FIRST_ARTICLE_ONLY",
+  "holds": [
+    "site anchor substrate/capacity validation",
+    "slide sample template",
+    "material certificate and physical proof tests",
+    "guitar fit and pad compatibility",
+    "ventilation deferred"
+  ]
+}

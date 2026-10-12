@@ -11,3 +11,23 @@ NOT RELEASED FOR MANUFACTURE: guitar support incomplete (adapter only),
 ventilation deferred, stability/load not tested, some hardware only search links.
 No claim of exact On-Stage factory reproduction or verified lowest price.
 Public target: existing GitHub Pages /ldsp-onstage/; old /app/ preserved.
+
+D2 / 2026-10-12
+Separate d2.html and output-d2/; R6 and D1 geometry unchanged.
+30 parts in 16 mm LDSP, 80 paired joints, 178 drilling operations.
+Actual guitar cradle GB/G1/G2/GN/GC1/GC2 replaces the unused adapter concept.
+BOYARD DB4501Zn/300 drawer; pull-slot handle; removable floor pedalboard.
+52 confirmats 7x50; 28 pan-head 4x30; 10 pan-head 3.5x16 for slides.
+Shelf K top 236 mm, two vertical 622x80x16 ribs: each conservatively checked
+for the entire 20 kg design load without assuming composite action.
+Concrete-wall fixing: 2 SXRL10x160FUS, 6 spacers, washers; site validation required.
+One 2500x1830 sheet, 4 mm kerf and 10 mm trim. Geometry and export checks pass.
+Real SKU links, dated prices, package quantities and manufacturing budget;
+not a quotation; anchor split-pack availability and delivery not confirmed.
+Independent checks caught and corrected crossing holes in guitar gussets and
+insufficient material between the cable slot and a pedalboard screw.
+47-page PDF: dimensions, hole entry faces/depths, connections, nesting, estimates.
+Release is FIRST_ARTICLE_ONLY: actual slide template, wall substrate, board
+certificate, joint proof tests and guitar fit remain physical acceptance gates.
+Ventilation explicitly deferred by owner. No claim of certified load capacity.
+Source: d2_geometry.py; exports: d2_build.py; verification: d2_verify.py.

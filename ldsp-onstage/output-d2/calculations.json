@@ -1,0 +1,280 @@
+{
+  "assumptions": {
+    "board_density_kg_m3": 600,
+    "E16_MPa": 1600,
+    "bending16_MPa": 11,
+    "material_safety_factor": 3,
+    "amp_design_kg": 20,
+    "guitar_max_kg": 5,
+    "pedal_press_N": 300,
+    "guitar_lateral_N": 30,
+    "drawer_payload_limit_kg": 3
+  },
+  "cases": {
+    "amp_False_drawer_False_guitar_False": {
+      "mass_kg": 22.23,
+      "cg_mm": [
+        353.7,
+        319.9,
+        182.4
+      ],
+      "restoring_Nm": {
+        "front": 35.41,
+        "rear": 34.37,
+        "left": 77.13,
+        "right": 104.74
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 44.3,
+        "rear": 43.0,
+        "left": 96.4,
+        "right": 130.9
+      },
+      "drawer_pull_30N_at_92mm_margin": 12.83
+    },
+    "amp_False_drawer_False_guitar_True": {
+      "mass_kg": 27.23,
+      "cg_mm": [
+        425.4,
+        351.1,
+        181.9
+      ],
+      "restoring_Nm": {
+        "front": 43.26,
+        "rear": 42.22,
+        "left": 113.63,
+        "right": 109.15
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 54.1,
+        "rear": 52.8,
+        "left": 142.0,
+        "right": 136.4
+      },
+      "drawer_pull_30N_at_92mm_margin": 15.67
+    },
+    "amp_False_drawer_True_guitar_False": {
+      "mass_kg": 22.23,
+      "cg_mm": [
+        353.7,
+        319.9,
+        118.5
+      ],
+      "restoring_Nm": {
+        "front": 21.48,
+        "rear": 48.3,
+        "left": 77.13,
+        "right": 104.74
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 26.8,
+        "rear": 60.4,
+        "left": 96.4,
+        "right": 130.9
+      },
+      "drawer_pull_30N_at_92mm_margin": 7.78
+    },
+    "amp_False_drawer_True_guitar_True": {
+      "mass_kg": 27.23,
+      "cg_mm": [
+        425.4,
+        351.1,
+        129.8
+      ],
+      "restoring_Nm": {
+        "front": 29.33,
+        "rear": 56.15,
+        "left": 113.63,
+        "right": 109.15
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 36.7,
+        "rear": 70.2,
+        "left": 142.0,
+        "right": 136.4
+      },
+      "drawer_pull_30N_at_92mm_margin": 10.63
+    },
+    "amp_True_drawer_False_guitar_False": {
+      "mass_kg": 33.83,
+      "cg_mm": [
+        344.6,
+        359.4,
+        176.1
+      ],
+      "restoring_Nm": {
+        "front": 51.8,
+        "rear": 54.4,
+        "left": 114.35,
+        "right": 162.43
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 64.7,
+        "rear": 68.0,
+        "left": 142.9,
+        "right": 203.0
+      },
+      "drawer_pull_30N_at_92mm_margin": 18.77
+    },
+    "amp_True_drawer_False_guitar_True": {
+      "mass_kg": 38.83,
+      "cg_mm": [
+        396.0,
+        376.2,
+        176.6
+      ],
+      "restoring_Nm": {
+        "front": 59.65,
+        "rear": 62.25,
+        "left": 150.84,
+        "right": 166.85
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 74.6,
+        "rear": 77.8,
+        "left": 188.5,
+        "right": 208.6
+      },
+      "drawer_pull_30N_at_92mm_margin": 21.61
+    },
+    "amp_True_drawer_True_guitar_False": {
+      "mass_kg": 33.83,
+      "cg_mm": [
+        344.6,
+        359.4,
+        134.1
+      ],
+      "restoring_Nm": {
+        "front": 37.87,
+        "rear": 68.33,
+        "left": 114.35,
+        "right": 162.43
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 47.3,
+        "rear": 85.4,
+        "left": 142.9,
+        "right": 203.0
+      },
+      "drawer_pull_30N_at_92mm_margin": 13.72
+    },
+    "amp_True_drawer_True_guitar_True": {
+      "mass_kg": 38.83,
+      "cg_mm": [
+        396.0,
+        376.2,
+        140.0
+      ],
+      "restoring_Nm": {
+        "front": 45.71,
+        "rear": 76.18,
+        "left": 150.84,
+        "right": 166.85
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 57.1,
+        "rear": 95.2,
+        "left": 188.5,
+        "right": 208.6
+      },
+      "drawer_pull_30N_at_92mm_margin": 16.56
+    },
+    "empty_closed": {
+      "mass_kg": 20.07,
+      "cg_mm": [
+        356.6,
+        290.1,
+        185.1
+      ],
+      "restoring_Nm": {
+        "front": 32.51,
+        "rear": 30.5,
+        "left": 70.21,
+        "right": 94.0
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 40.6,
+        "rear": 38.1,
+        "left": 87.8,
+        "right": 117.5
+      },
+      "drawer_pull_30N_at_92mm_margin": 11.78
+    },
+    "empty_open": {
+      "mass_kg": 20.07,
+      "cg_mm": [
+        356.6,
+        290.1,
+        124.1
+      ],
+      "restoring_Nm": {
+        "front": 20.49,
+        "rear": 42.52,
+        "left": 70.21,
+        "right": 94.0
+      },
+      "critical_horizontal_force_at_800_N": {
+        "front": 25.6,
+        "rear": 53.1,
+        "left": 87.8,
+        "right": 117.5
+      },
+      "drawer_pull_30N_at_92mm_margin": 7.42
+    }
+  },
+  "shelf": {
+    "model": "One 16x80 vertical rib, span 622, entire 20 kg central load; second rib ignored conservatively; no composite action assumed",
+    "stress_MPa": 1.788,
+    "allowable_MPa": 3.667,
+    "short_deflection_mm": 0.901,
+    "creep_multiplier_assumed": 3,
+    "long_deflection_mm": 2.702,
+    "deflection_limit_mm": 3.11
+  },
+  "pedalboard": {
+    "stress_MPa": 3.516,
+    "deflection_mm": 0.449
+  },
+  "drawer": {
+    "slide_rated_kg": 15,
+    "estimated_wood_and_pedal_kg": 4.73,
+    "foot_press_allowed": false
+  },
+  "panel_between_ribs": {
+    "span_mm": 328,
+    "load_kg": 20,
+    "width_mm": 470,
+    "stress_MPa": 0.802,
+    "short_deflection_mm": 0.562
+  },
+  "guitar_fork": {
+    "lateral_force_N": 30,
+    "lever_mm": 160,
+    "moment_Nmm": 4800,
+    "root_screw_pair_arm_mm": 44,
+    "tension_per_upper_screw_N": 54.5,
+    "conservative_one_prong_stress_MPa": 1.648,
+    "test_force_N": 60
+  },
+  "wall": {
+    "type": "fischer SXRL 10x160 FUS 522724",
+    "quantity": 2,
+    "substrate": "sound C20/25 concrete only; not plasterboard or hollow masonry",
+    "spacer_mm": 48,
+    "board_mm": 16,
+    "washer_mm": 2.5,
+    "embedment_mm": 93.5,
+    "drill_diameter_mm": 10,
+    "drill_depth_from_washer_face_mm": 170,
+    "design_horizontal_load_N": 200,
+    "tie_force_total_N": 222.2,
+    "proof_force_total_N": 300,
+    "capacity_verified": false
+  },
+  "limits": [
+    "Screening calculations, not a furniture standard test or certification.",
+    "Fastener withdrawal and joint rotational stiffness require first-article proof tests.",
+    "Wall fixing is mandatory; calculated demand is not a measured connection capacity.",
+    "Ventilation deferred by owner."
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-12",
+  "currency": "RUB",
+  "hardware": [
+    {
+      "id": "SL",
+      "name": "BOYARD DB4501Zn/300, пара",
+      "required": 1,
+      "purchase": "1 пара",
+      "price_rub": 275.97,
+      "url": "https://www.boyard.biz/catalog/slide_systems/db4501zn-300.html",
+      "note": "15 кг на пару по текущей карточке. Не 40 кг из старого каталога. В Екатеринбурге наличие не подтверждено."
+    },
+    {
+      "id": "C7",
+      "name": "Конфирмат 7×50 Timtech",
+      "required": 52,
+      "purchase": "6 пакетов по 10",
+      "price_rub": 558,
+      "url": "https://www.ozon.ru/product/konfirmat-7h50-mm-10sht-mebelnyy-vint-styazhka-golovka-potaynaya-pod-shestigrannik-evrovint-1317687131/",
+      "note": "93 ₽ за 10 шт., цена без специальной банковской скидки; остаток в запас."
+    },
+    {
+      "id": "S4",
+      "name": "Шуруп по дереву 4×30 PZ2, полукруглая головка",
+      "required": 28,
+      "purchase": "250 шт.",
+      "price_rub": 1020,
+      "url": "https://letfix.ru/shop/fasteners/screws/screws_for_wood_polukr_yzn_4x30.html",
+      "note": "Артикул 106001817. Цеху выгоднее отпустить 28 шт. из своей упаковки; их доля 114,24 ₽. Не заменять головку без изменения чертежа."
+    },
+    {
+      "id": "S16",
+      "name": "Шуруп по дереву 3,5×16 PZ2, полукруглая головка",
+      "required": 10,
+      "purchase": "250 шт.",
+      "price_rub": 441,
+      "url": "https://letfix.ru/shop/fasteners/screws/screws_for_wood_polukr_yzn_3-5x16.html",
+      "note": "Артикул 106001802. Доля 10 шт. — 17,64 ₽. Проверить зазор головки в направляющей."
+    },
+    {
+      "id": "STR",
+      "name": "Fortisflex КСВ 16×310 чёрный, 59295",
+      "required": 9,
+      "purchase": "20 шт.",
+      "price_rub": 797.8,
+      "url": "https://www.radioelementy.ru/catalog/pod-zakaz/styazhka-velkro-ksv-16kh310-chern-fortisflex-59295/",
+      "note": "39,89 ₽/шт. Один ремень вилки, восемь для кабелей. Не несущая подвеска гитары."
+    },
+    {
+      "id": "VEL",
+      "name": "UNIBOB 49310, крючок+петля 20 мм × 1 м",
+      "required": 1,
+      "purchase": "1 комплект",
+      "price_rub": 232.8,
+      "url": "https://lipkaya-lenta.ru/katalog/lipuchki-zastezhki/lenta-lipuchka-unibob-kruchok-petlya-samokleyashayasya.html",
+      "note": "2 полосы по 200 мм под AIRSTEP; остальные 600 мм в запас. Не закрывать серийный номер/винты прибора."
+    },
+    {
+      "id": "FEL",
+      "name": "Pacific РС6055BR, войлок 3 мм, 35×55, 12 шт.",
+      "required": 12,
+      "purchase": "2 листа / 24 накладки",
+      "price_rub": 104,
+      "url": "https://amix.biz/catalog/nozhki_mebelnye/podpyatniki_mebelnye/rs6055br/",
+      "note": "52 ₽/лист. По 3 накладки на G1/G2, 6 подрезанных накладок по контуру вилки. Стыки без открытой кромки; сначала проба совместимости с лаком."
+    },
+    {
+      "id": "RUB",
+      "name": "Резиновая самоклеящаяся полоса 29×3 мм, 6 м",
+      "required": 1,
+      "purchase": "1 рулон",
+      "price_rub": 1222,
+      "url": "https://m.integration.vs.market.yandex.net/card/samokleyashchayasya-rezinovaya-taktilnaya-polosa-protiv-skolzheniya-29-mm-kh-3-mm-tsvet-seryy-dlina-6-metrov/102385977808",
+      "note": "Цена с Яндекс Пэй. 4 полосы 834 мм под E1/E2 (нахлёст по ширине обрезать), 2 по 500 под PF1/PF2. Остаток 1664 мм. Не использовать эту резину на гитаре."
+    },
+    {
+      "id": "W1",
+      "name": "fischer SXRL 10×160 FUS, 522724",
+      "required": 2,
+      "purchase": "2 шт. / проверить поштучную продажу",
+      "price_rub": 578.5,
+      "url": "https://fischersystem.ru/catalog/fasadnye_dyubeli/522724/",
+      "note": "289,25 ₽/шт. Каталог также указывает коробку 50 шт. за 14 462,49 ₽. Не заказывать коробку ради двух: стоимость 2 шт. условна до подтверждения отпуска. Только узел для бетона C20/25."
+    },
+    {
+      "id": "W2",
+      "name": "Шайба DIN 9021 M10, оцинкованная",
+      "required": 2,
+      "purchase": "10 шт.",
+      "price_rub": 78,
+      "url": "https://www.stroysa.tomsk.ru/catalog/metrika/shayba_din_9021_uvelichennaya_m10_10sht/",
+      "note": "78 ₽ без карты; Øнаружный 30, Øвнутренний 10,5, толщина 2,5 мм. Под головками стеновых креплений."
+    }
+  ],
+  "hardware_total_rub": 5308.07,
+  "edge_budget_m": 33.73,
+  "materials": [
+    [
+      "ЛДСП белый 16 мм, 2500×1830, 1 лист",
+      2130,
+      "https://twowin.ru/product/ldsp-16mm-2500kh1830-belyy-0110-resm-kronoshpan/"
+    ]
+  ],
+  "services": [
+    [
+      "Раскрой 30 деталей ЛДСП 16 мм",
+      700,
+      "https://family96.ru/raspil-ldsp/",
+      "Тариф 21–40 деталей; малые W выпиливать из укрупнённой заготовки безопасным способом."
+    ],
+    [
+      "Кромление всех деталей 16 мм",
+      2024,
+      "https://family96.ru/raspil-ldsp/",
+      "Расчётная оценка: 60 ₽/м; фасонные торцы цех считает отдельно."
+    ],
+    [
+      "Материал кромки 0,4 мм + герметизация пазов",
+      600,
+      "",
+      "Резерв, не найденная розничная цена. Включить в предложение цеха."
+    ],
+    [
+      "Присадка всех отверстий",
+      4450,
+      "https://drevplit96.ru/services/raspil/",
+      "Оценка по тарифу от 25 ₽/отверстие, торцевые и зенковки могут стоить иначе."
+    ],
+    [
+      "Фрезеровка вилки, ручки и трёх пазов",
+      2000,
+      "",
+      "Бюджетный резерв на ЧПУ/шаблон, не коммерческое предложение."
+    ],
+    [
+      "Сборка и контрольные испытания образца",
+      2500,
+      "",
+      "Резерв; монтаж анкеров и доставка отдельно."
+    ]
+  ],
+  "total_retail_rub": 19712.07,
+  "workshop_scenario_rub": 18382.95,
+  "excluded": [
+    "доставка",
+    "монтаж в стену",
+    "инструменты/оснастка изготовителя",
+    "техника/гитара",
+    "необязательные органайзеры"
+  ],
+  "caveat": "Не оферта. Поштучный отпуск W1 не подтверждён. Перед покупкой сверить цену, упаковку и доставку. Ни один заказ не оформлен."
+}
