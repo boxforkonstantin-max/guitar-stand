@@ -1,0 +1,199 @@
+{
+  "cases": {
+    "amp0_guitar0_open0_floor0": {
+      "mass_kg": 18.45,
+      "restoring_Nm": {
+        "front": 28.95,
+        "rear": 28.95,
+        "left": 59.17,
+        "right": 59.17
+      },
+      "critical_force_at_800_N": {
+        "front": 36.2,
+        "rear": 36.2,
+        "left": 74.0,
+        "right": 74.0
+      }
+    },
+    "amp0_guitar0_open1_floor0": {
+      "mass_kg": 18.45,
+      "restoring_Nm": {
+        "front": 28.71,
+        "rear": 29.2,
+        "left": 59.17,
+        "right": 59.17
+      },
+      "critical_force_at_800_N": {
+        "front": 35.9,
+        "rear": 36.5,
+        "left": 74.0,
+        "right": 74.0
+      }
+    },
+    "amp0_guitar0_open1_floor1": {
+      "mass_kg": 16.43,
+      "restoring_Nm": {
+        "front": 25.92,
+        "rear": 25.64,
+        "left": 52.69,
+        "right": 52.69
+      },
+      "critical_force_at_800_N": {
+        "front": 32.4,
+        "rear": 32.1,
+        "left": 65.9,
+        "right": 65.9
+      }
+    },
+    "amp0_guitar1_open0_floor0": {
+      "mass_kg": 23.45,
+      "restoring_Nm": {
+        "front": 36.8,
+        "rear": 36.8,
+        "left": 94.24,
+        "right": 56.18
+      },
+      "critical_force_at_800_N": {
+        "front": 46.0,
+        "rear": 46.0,
+        "left": 117.8,
+        "right": 70.2
+      }
+    },
+    "amp0_guitar1_open1_floor0": {
+      "mass_kg": 23.45,
+      "restoring_Nm": {
+        "front": 36.55,
+        "rear": 37.05,
+        "left": 94.24,
+        "right": 56.18
+      },
+      "critical_force_at_800_N": {
+        "front": 45.7,
+        "rear": 46.3,
+        "left": 117.8,
+        "right": 70.2
+      }
+    },
+    "amp0_guitar1_open1_floor1": {
+      "mass_kg": 21.43,
+      "restoring_Nm": {
+        "front": 33.77,
+        "rear": 33.49,
+        "left": 87.76,
+        "right": 49.7
+      },
+      "critical_force_at_800_N": {
+        "front": 42.2,
+        "rear": 41.9,
+        "left": 109.7,
+        "right": 62.1
+      }
+    },
+    "amp1_guitar0_open0_floor0": {
+      "mass_kg": 30.05,
+      "restoring_Nm": {
+        "front": 45.34,
+        "rear": 48.98,
+        "left": 96.38,
+        "right": 96.38
+      },
+      "critical_force_at_800_N": {
+        "front": 56.7,
+        "rear": 61.2,
+        "left": 120.5,
+        "right": 120.5
+      }
+    },
+    "amp1_guitar0_open1_floor0": {
+      "mass_kg": 30.05,
+      "restoring_Nm": {
+        "front": 45.09,
+        "rear": 49.23,
+        "left": 96.38,
+        "right": 96.38
+      },
+      "critical_force_at_800_N": {
+        "front": 56.4,
+        "rear": 61.5,
+        "left": 120.5,
+        "right": 120.5
+      }
+    },
+    "amp1_guitar0_open1_floor1": {
+      "mass_kg": 28.03,
+      "restoring_Nm": {
+        "front": 42.31,
+        "rear": 45.67,
+        "left": 89.9,
+        "right": 89.9
+      },
+      "critical_force_at_800_N": {
+        "front": 52.9,
+        "rear": 57.1,
+        "left": 112.4,
+        "right": 112.4
+      }
+    },
+    "amp1_guitar1_open0_floor0": {
+      "mass_kg": 35.05,
+      "restoring_Nm": {
+        "front": 53.19,
+        "rear": 56.83,
+        "left": 131.46,
+        "right": 93.39
+      },
+      "critical_force_at_800_N": {
+        "front": 66.5,
+        "rear": 71.0,
+        "left": 164.3,
+        "right": 116.7
+      }
+    },
+    "amp1_guitar1_open1_floor0": {
+      "mass_kg": 35.05,
+      "restoring_Nm": {
+        "front": 52.94,
+        "rear": 57.08,
+        "left": 131.46,
+        "right": 93.39
+      },
+      "critical_force_at_800_N": {
+        "front": 66.2,
+        "rear": 71.3,
+        "left": 164.3,
+        "right": 116.7
+      }
+    },
+    "amp1_guitar1_open1_floor1": {
+      "mass_kg": 33.03,
+      "restoring_Nm": {
+        "front": 50.16,
+        "rear": 53.52,
+        "left": 124.97,
+        "right": 86.91
+      },
+      "critical_force_at_800_N": {
+        "front": 62.7,
+        "rear": 66.9,
+        "left": 156.2,
+        "right": 108.6
+      }
+    }
+  },
+  "shelf": {
+    "model": "One 16x80 vertical rib, span 622, entire 20 kg central load; second rib ignored conservatively; no composite action assumed",
+    "stress_MPa": 1.788,
+    "allowable_MPa": 3.667,
+    "short_deflection_mm": 0.901,
+    "creep_multiplier_assumed": 3,
+    "long_deflection_mm": 2.702,
+    "deflection_limit_mm": 3.11
+  },
+  "pedalboard": {
+    "stress_MPa": 3.516,
+    "deflection_mm": 0.449
+  },
+  "note": "Screening: density 600 kg/m3, equipment masses fixed, guitar 5 kg; holes and hardware mass neglected. Not a certified stability test.",
+  "wall_required": true
+}

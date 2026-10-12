@@ -7,14 +7,14 @@
   <title>Гитарная стойка — 3D-конструктор</title>
   <link rel="stylesheet" href="styles.css">
   <script type="importmap">
-    {"imports":{"three":"https://unpkg.com/three@0.170.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.170.0/examples/jsm/"}}
+    {"imports":{"three":"../vendor/three/three.module.js","three/addons/":"../vendor/three/"}}
   </script>
 </head>
 <body>
   <header class="topbar">
     <div>
       <h1>Стойка 590 × 420 × 800</h1>
-      <p>Параметрическая сборка · единицы сцены: мм</p>
+      <p>Параметрическая сборка · единицы сцены: мм · <a href="https://boxforkonstantin-max.github.io/guitar-stand/app/">Постоянная ссылка R6</a> · <a href="../ldsp-onstage/d3.html">Новая стойка D3</a></p>
     </div>
     <div class="status" id="status"><span></span> R6 / горизонтальная полка Katana</div>
   </header>
@@ -112,6 +112,7 @@
       </section>
     </aside>
   </main>
-  <script type="module" src="app.js"></script>
+  <script type="module">import('./app.js').catch(error=>{document.getElementById('status').textContent='Не удалось запустить 3D: '+error.message+'. Обновите страницу или откройте постоянную ссылку ниже.';});</script>
+  <noscript>Для конструктора включите JavaScript.</noscript>
 </body>
 </html>

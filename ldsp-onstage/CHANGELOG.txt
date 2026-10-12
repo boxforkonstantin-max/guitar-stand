@@ -31,3 +31,10 @@ Release is FIRST_ARTICLE_ONLY: actual slide template, wall substrate, board
 certificate, joint proof tests and guitar fit remain physical acceptance gates.
 Ventilation explicitly deferred by owner. No claim of certified load capacity.
 Source: d2_geometry.py; exports: d2_build.py; verification: d2_verify.py.
+D3 / 12.10.2026 / correction requested by owner
+- Inspected official detail photos 48143, 48144, 48145, 48146: padded screw-on supports, recessed handles, separate removable pedalboard and bottom door.
+- D2 rejected. D3 removes telescopic drawer, wooden neck fork, braces and oversized guitar plinth. Body retained 654x360x800, 15 wood parts; two 110x30 side hand openings.
+- Drop-front 0..90 degrees, separate lift/pull/lower pedalboard sequence. No slide hardware. 91-angle sweep check; 18 mm floor clearance, 8 mm lifted-foot clearance, 21 mm pedal clearance under front rib.
+- Exact hardware template remains HOLD. 108 core drillings documented; no invented holder/hinge holes. PDF 20 pages and DXF are review files, not full production authorization.
+- Krepika live catalogue: 6725 7x50 at 1.98 RUB/unit; 7312 4x30 at 1273.96 RUB/kg; 1575 3.5x16 at 519 RUB/kg; 1794 M10 washer 3.74 RUB/unit. No bulk packs or rubber roll. Reserve-based total 13420.04 RUB, hardware 2305.08, not a seller quote.
+- Static hosting reliability: vendored same-version Three.js, visible import failure message in R6/D3, permanent HTTPS links. R6 geometry and JavaScript unchanged.

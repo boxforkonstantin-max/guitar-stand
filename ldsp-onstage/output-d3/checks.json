@@ -1,0 +1,9 @@
+{
+  "status": "layout checks passed; manufacturing HOLD",
+  "parts": 15,
+  "joints": 54,
+  "bores": 108,
+  "door_sweep_samples": 91,
+  "open_door_min_floor_clearance_mm": 18,
+  "lifted_pedal_clearance_under_rib_mm": 21
+}
