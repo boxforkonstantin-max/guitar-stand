@@ -50,6 +50,9 @@ const holders=new THREE.Group();scene.add(holders);
 for(const h of data.holders){const [x,y,z]=h.center;rod(h.radius,h.length,x,y,z,dark,holders);rod(h.stop_radius,8,x+h.length-8,y,z,dark,holders);if(h.id==='GNECK')rod(h.stop_radius,12,x+12,y,z,dark,holders);}
 groups.find(g=>g.userData.part.id==='R').attach(holders);
 guitar.position.set(-28,65,45);
+// Soft retention strap closes around the neck; it does not carry instrument weight.
+const strapPath=new THREE.CatmullRomCurve3([new THREE.Vector3(695,755,172),new THREE.Vector3(743,755,172),new THREE.Vector3(743,755,260),new THREE.Vector3(695,755,260)],true,'catmullrom',.05);
+const strap=new THREE.Mesh(new THREE.TubeGeometry(strapPath,48,2,8,true),dark);scene.add(strap);groups.find(g=>g.userData.part.id==='R').attach(strap);
 // Hinge envelope only. No imaginary manufacturer hole pattern.
 const hinge=box(500,3,5,77,32,-4,metal,scene);
 const door=groups.find(g=>g.userData.part.id==='F');
