@@ -1,3 +1,12 @@
+Pedal options / 2026-10-16
+Separate pedal-options.html: option 1 removable board, option 3 pedal fixed to drop flap.
+Old R6/D1/D2/D3 files and drawings unchanged. Comparison only, not production release.
+Option 3 flap 618x180x16, axis Y34 Z-2, 18mm outside-face runners contact floor at 90 degrees.
+Front beam moved to Z90 in this option only; structural validation still required.
+91-angle screening: pedal bounds, floor supports and schematic cable route passed.
+Cable is illustrative slack, not fixed-length physics; real connector/bend tests required.
+Browser: open/close, selection, cutaway and cameras checked; narrow-device test not certified.
+
 D1 / 2026-10-11
 Separate LDSP prototype; original R6 files unchanged.
 Carcass 654 x 360 x 800 mm, 16 mm LDSP; horizontal amplifier shelf.
